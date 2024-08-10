@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Gadget Gourmet\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-10T15:48:44.715Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Gadget Gourmet\\Models\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Entities\\User.cs",
               "RelativeToolTip": "Gadget Gourmet\\Models\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T15:39:06.255Z",
               "EditorCaption": ""

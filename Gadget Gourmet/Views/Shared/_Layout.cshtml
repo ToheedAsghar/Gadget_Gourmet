@@ -1,49 +1,128 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Gadget_Gourmet</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Gadget_Gourmet.styles.css" asp-append-version="true" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Gadget_Gourmet</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Gadget_Gourmet.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Gadget_Gourmet</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+	<header style="font-family: Noah" >
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3 bg-body-tertiary">
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Gadget_Gourmet - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+			<div class="container-fluid">
+				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GADGET GOURMET</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="justify-content-md-center collapse navbar-collapse " id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link px-2 text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Category</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Blog</a>
+						</li>
+					</ul>
+				</div>
+
+				@* <div class="justify-content-md-center collapse navbar-collapse " id="navbarNav">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<img src="@Url.Content("C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Content\\icons\\tiktok.png")" alt="Image" />
+							<img src="@Url.Content("Content/icons/tiktok.png")" alt="Logo" width="30" height="24" class="d-inline-block" />
+							Bootstrap
+						</a>
+					</div>
+
+				</div> *@
+
+			</div>
+
+		</nav>
+	</header>
+
+
+
+
+	<div class="container">
+		<main role="main" class="pb-3">
+
+			@RenderBody()
+		</main>
+	</div>
+
+	<!--References-->
+	<div class="container" style="font-family:Noah">
+		<div class="row " style="min-height: 200px">
+
+			<div class="col-lg-4">
+				<span class="fw-bold fs-2">Gadget Gourmet</span>
+				<p class="fs-6 tab-pane">
+					Gadget Gourmet is a cutting-edge e-commerce platform dedicated to offering a curated selection of innovative
+					and modern kitchen gadgets
+				</p>
+			</div>
+
+			<div class="col-md-2"></div>
+
+			<div class="col-lg-2">
+				<span class="fw-bold fs-5">My Account</span>
+
+				<div class="list-group fs-6">
+					<a href="#" class="list-group-item no-border list-group-item-light" style="border:none">Orders</a>
+					<a href="#" class="list-group-item list-group-item-light" style="border:none"> WishList</a>
+					<a href="#" class="list-group-item list-group-item-light" style="border:none"> Register</a>
+					<a href="#" class="list-group-item list-group-item-light" style="border:none"> Login</a>
+				</div>
+			</div>
+
+			<div class="col-lg-2">
+				<span class="fw-bold fs-5">Customer Care</span>
+				<a href="#" class="list-group-item no-border list-group-item-light" style="border:none">FAQs</a>
+				<a href="#" class="list-group-item list-group-item-light" style="border:none"> How to Return?</a>
+				<a href="#" class="list-group-item list-group-item-light" style="border:none"> Return Policy</a>
+				<a href="#" class="list-group-item list-group-item-light" style="border:none"> Terms and Conditions</a>
+			</div>
+
+			<div class="col-lg-2">
+				<span class="fw-bold fs-5">Contact Us</span> <br />
+				<span class="fs-5">+92-321-7880049</span><br />
+				<span class="fs-6">DHA Sector XX</span>
+				<span class="fs-6">Lahore</span>
+			</div>
+		</div>
+	</div>
+	<br />
+	<footer class="footer text-muted">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">Copyright &copy; 2024 - Gadget_Gourmet. All Rights Reserved</div>
+
+				@*
+				<div class="col-md-4 d-flex justify-content-center">
+				<img src="@Url.Content("~/Content/icons/fb.jpg")" alt="Facebook" />
+				<img src="@Url.Content("~/Content/icons/instagram.png")" alt="Instagram" />
+				<img src="@Url.Content("~/Content/icons/tiktok.png")" alt="Tiktok" />
+				</div>
+
+				<div class="col-md-4 d-flex justify-content-end"> </div> *@
+			</div>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -7,4 +7,8 @@
     <RootNamespace>Gadget_Gourmet</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Content\icons\" />
+  </ItemGroup>
+
 </Project>

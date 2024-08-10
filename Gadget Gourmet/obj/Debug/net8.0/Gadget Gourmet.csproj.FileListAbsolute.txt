@@ -1,0 +1,31 @@
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\appsettings.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\Gadget Gourmet.staticwebassets.runtime.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\Gadget Gourmet.exe
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\Gadget Gourmet.deps.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\Gadget Gourmet.runtimeconfig.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\Gadget Gourmet.dll
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\bin\Debug\net8.0\Gadget Gourmet.pdb
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.AssemblyInfoInputs.cache
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.AssemblyInfo.cs
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.csproj.CoreCompileInputs.cache
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.RazorAssemblyInfo.cache
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.RazorAssemblyInfo.cs
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.sourcelink.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets\msbuild.Gadget Gourmet.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets\msbuild.build.Gadget Gourmet.props
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Gadget Gourmet.props
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Gadget Gourmet.props
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\scopedcss\bundle\Gadget Gourmet.styles.css
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\scopedcss\projectbundle\Gadget Gourmet.bundle.scp.css
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.dll
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\refint\Gadget Gourmet.dll
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.pdb
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\Gadget Gourmet.genruntimeconfig.cache
+C:\Users\Toheed\source\repos\Gadget Gourmet\Gadget Gourmet\obj\Debug\net8.0\ref\Gadget Gourmet.dll
