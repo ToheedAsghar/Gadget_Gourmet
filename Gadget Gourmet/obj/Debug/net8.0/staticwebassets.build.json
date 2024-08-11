@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8is/OJAtlvs30TPoyPCEb2LDLILAkNyiZp7cxY4dDIM=",
+  "Hash": "k6EPM4uVr+sOzAQkcpIFefM+oBlWP4BMeBuACGhFL0Y=",
   "Source": "Gadget Gourmet",
   "BasePath": "_content/Gadget Gourmet",
   "Mode": "Default",
@@ -376,6 +376,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\icons\\tiktok.png"
+    },
+    {
+      "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\store\\baby.png",
+      "SourceId": "Gadget Gourmet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\",
+      "BasePath": "_content/Gadget Gourmet",
+      "RelativePath": "Images/store/baby.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\store\\baby.png"
     },
     {
       "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\js\\site.js",

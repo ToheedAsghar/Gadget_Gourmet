@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\Images\\icons\\tiktok.png"
     },
     {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\store\\baby.png",
+      "PackagePath": "staticwebassets\\Images\\store\\baby.png"
+    },
+    {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

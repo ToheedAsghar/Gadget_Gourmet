@@ -5,6 +5,7 @@
         public string? Name { get; set; }
         public string? Description { get; set; }
         public string? Weight { get; set; }
+        public decimal Price { get; set; } = 0;
         public string? Color { get; set; }
         public string? Manufacturer { get; set; }
         public int Category { get; set; }
