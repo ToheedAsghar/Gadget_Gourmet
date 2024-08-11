@@ -5,6 +5,50 @@
       "PackagePath": "staticwebassets\\Gadget Gourmet.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\account-header-icon.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\account-header-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\account-header-icon.svg",
+      "PackagePath": "staticwebassets\\Images\\icons\\account-header-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\cart-header-icon.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\cart-header-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\cart-header-icon.svg",
+      "PackagePath": "staticwebassets\\Images\\icons\\cart-header-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\cash-footer-icon.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\cash-footer-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\fb.jpg",
+      "PackagePath": "staticwebassets\\Images\\icons\\fb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\instagram.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\payment-method-footer.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\payment-method-footer.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\paypal_footer_icon.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\paypal_footer_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\search-header-icon.svg",
+      "PackagePath": "staticwebassets\\Images\\icons\\search-header-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\tiktok.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\tiktok.png"
+    },
+    {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

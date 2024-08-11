@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Content\icons\" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\icons\fb.jpg" />
+    <None Include="wwwroot\Images\icons\instagram.png" />
+    <None Include="wwwroot\Images\icons\tiktok.png" />
   </ItemGroup>
 
 </Project>
