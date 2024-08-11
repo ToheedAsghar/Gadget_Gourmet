@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Gadget Gourmet.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\home_images\\drainer.svg",
+      "PackagePath": "staticwebassets\\Images\\home_images\\drainer.svg"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\home_images\\spoon-home.svg",
+      "PackagePath": "staticwebassets\\Images\\home_images\\spoon-home.svg"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\home_images\\wash-drainer.svg",
+      "PackagePath": "staticwebassets\\Images\\home_images\\wash-drainer.svg"
+    },
+    {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\icons\\account-header-icon.png",
       "PackagePath": "staticwebassets\\Images\\icons\\account-header-icon.png"
     },
@@ -51,6 +63,10 @@
     {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\favicon.ico",
