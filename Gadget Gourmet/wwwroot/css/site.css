@@ -28,16 +28,18 @@ body {
     padding: 10px 30px;
     font-size: 18px;
     font-weight: 500;
-    
     text-transform: uppercase;
     display: inline-block;
     transition: background-color 0.3s ease;
     text-decoration: none;
     border: none;
+    margin-top: 20px; 
+    display: block;
+    width: 150px;
 }
 
     .custom-button:hover {
-        color:white;
+        color: white;
         background-color: darkblue;
         text-decoration: none;
     }
