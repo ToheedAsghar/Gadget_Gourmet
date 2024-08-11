@@ -17,4 +17,8 @@
     <None Include="wwwroot\Images\icons\tiktok.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
 </Project>
