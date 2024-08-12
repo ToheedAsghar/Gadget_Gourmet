@@ -13,5 +13,10 @@ namespace Gadget_Gourmet.Controllers
 		{
 			return View();
 		}
+
+		public IActionResult Profile()
+		{
+			return View();
+		}
 	}
 }
