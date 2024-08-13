@@ -1,10 +1,46 @@
 ﻿@model Gadget_Gourmet.Models.Entities.User
 
-<div class="container-fluid d-flex">
-	<div class="row">
-		<div class="col-md-12">
-			<h3>Name</h3>
-			<span>@Model.UserName</span>
-		</div>
-	</div>
+<div class="container py-5" style="font-family: 'Roboto', sans-serif; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);">
+    <div class="row">
+        <!-- Header Section -->
+        <div class="col-md-12 mb-5 text-center">
+            <h2 class="fw-bold text-uppercase text-dark" style="letter-spacing: 2px; font-size: 2rem;">User Profile</h2>
+        </div>
+
+        <!-- Email Section -->
+        <div class="col-md-12 mb-4">
+            <h5 class="fw-bold text-uppercase text-secondary" style="letter-spacing: 1px;">Email</h5>
+            <p class="h4 text-dark">@Model.Email</p>
+        </div>
+
+        <!-- Username Section -->
+        <div class="col-md-12 mb-4">
+            <h5 class="fw-bold text-uppercase text-secondary" style="letter-spacing: 1px;">Username</h5>
+            <p class="h4 text-dark">@Model.UserName</p>
+        </div>
+
+        <!-- Phone Number Section -->
+        <div class="col-md-12 mb-4">
+            <h5 class="fw-bold text-uppercase text-secondary" style="letter-spacing: 1px;">Phone Number</h5>
+            <p class="h4 text-dark">@Model.Phone</p>
+        </div>
+
+        <!-- Gender Section -->
+        <div class="col-md-12 mb-4">
+            <h5 class="fw-bold text-uppercase text-secondary" style="letter-spacing: 1px;">Gender</h5>
+            <p class="h4 text-dark">@Model.Gender</p>
+        </div>
+
+        <!-- Date of Birth Section -->
+        <div class="col-md-12 mb-4">
+            <h5 class="fw-bold text-uppercase text-secondary" style="letter-spacing: 1px;">Date of Birth</h5>
+            <p class="h4 text-dark">@Model.DateOfBirth.ToShortDateString()</p>
+        </div>
+
+        <!-- Edit Profile Button -->
+        <a href="#" class="btn btn-light custom-button border-dark text-white fw-bold mx-2" style="width: 200px; height: 50px;">
+            Edit Profile
+            <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
 </div>

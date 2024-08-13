@@ -85,8 +85,6 @@ namespace Gadget_Gourmet.Controllers
 			}
 		}
 
-
-
 		public IActionResult Cart()
 		{
 			return View();
