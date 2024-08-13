@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k6EPM4uVr+sOzAQkcpIFefM+oBlWP4BMeBuACGhFL0Y=",
+  "Hash": "EsxfrfOGEp0NSawdvfGwxCNhvqFbOvLbtsnIoEZ/Nhg=",
   "Source": "Gadget Gourmet",
   "BasePath": "_content/Gadget Gourmet",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\bgimage.jpg",
+      "SourceId": "Gadget Gourmet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\",
+      "BasePath": "_content/Gadget Gourmet",
+      "RelativePath": "Images/bgimage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\bgimage.jpg"
     },
     {
       "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\home_images\\drainer.svg",
@@ -378,6 +397,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\tiktok.png"
     },
     {
+      "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\image2.jpg",
+      "SourceId": "Gadget Gourmet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\",
+      "BasePath": "_content/Gadget Gourmet",
+      "RelativePath": "Images/image2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\image2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\store\\baby.png",
       "SourceId": "Gadget Gourmet",
       "SourceType": "Discovered",
@@ -395,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\store\\baby.png"
+    },
+    {
+      "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\temp.jpg",
+      "SourceId": "Gadget Gourmet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\",
+      "BasePath": "_content/Gadget Gourmet",
+      "RelativePath": "Images/temp.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\temp.jpg"
     },
     {
       "Identity": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\js\\site.js",

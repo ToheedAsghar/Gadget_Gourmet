@@ -14,7 +14,7 @@
 		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3 bg-body-tertiary">
 			<div class="container-fluid" >
 				
-				<a class="navbar-brand ms justify-content-md-start order-md-1 order-2" asp-area="" asp-controller="Home" asp-action="Index">GADGET GOURMET</a>
+				<a class="navbar-brand justify-content-md-start order-md-1 order-2" asp-area="" asp-controller="Home" asp-action="Index" style="font-weight: 700">GADGET GOURMET</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" asp-controller="users" asp-action="profile">
 							<img src="@Url.Content("~/images/icons/account-header-icon.svg")" alt="User Account" width="24" height="24" />
 						</a>
 					</li>
@@ -81,12 +81,11 @@
 
 			<div class="col-lg-2">
 				<span class="fw-bold fs-5">My Account</span>
-
 				<div class="list-group fs-6">
 					<a href="#" class="list-group-item no-border list-group-item-light" style="border:none">Orders</a>
 					<a href="#" class="list-group-item list-group-item-light" style="border:none"> WishList</a>
-					<a href="#" class="list-group-item list-group-item-light" style="border:none"> Register</a>
-					<a href="#" class="list-group-item list-group-item-light" style="border:none"> Login</a>
+					<a asp-controller="users" asp-action="signup" class="list-group-item list-group-item-light" style="border:none"> Register</a>
+					<a asp-controller="users" asp-action="login" class="list-group-item list-group-item-light" style="border:none"> Login</a>
 				</div>
 			</div>
 
@@ -130,7 +129,7 @@
 				</div>
 
 				<!--Footer payment methods section-->
-				<div class="col-md-4 align-self-center justify-content-md-end order-md-3" style="font-size:"10px"; font-family: Noah">
+				<div class="col-md-4 align-self-center justify-content-md-end order-md-3" style="font-size: 10px"; font-family: Noah">
 					<div class="row mt-md-0 mt-sm-2 align-items-sm-center align-items-md-end">
 						<div class="col-md-6 fs-md-6">
 							Payment Methods

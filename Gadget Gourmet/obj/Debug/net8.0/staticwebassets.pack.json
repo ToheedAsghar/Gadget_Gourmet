@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Gadget Gourmet.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\bgimage.jpg",
+      "PackagePath": "staticwebassets\\Images\\bgimage.jpg"
+    },
+    {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\home_images\\drainer.svg",
       "PackagePath": "staticwebassets\\Images\\home_images\\drainer.svg"
     },
@@ -61,8 +65,16 @@
       "PackagePath": "staticwebassets\\Images\\icons\\tiktok.png"
     },
     {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\image2.jpg",
+      "PackagePath": "staticwebassets\\Images\\image2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\store\\baby.png",
       "PackagePath": "staticwebassets\\Images\\store\\baby.png"
+    },
+    {
+      "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\Images\\temp.jpg",
+      "PackagePath": "staticwebassets\\Images\\temp.jpg"
     },
     {
       "Id": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\wwwroot\\css\\site.css",

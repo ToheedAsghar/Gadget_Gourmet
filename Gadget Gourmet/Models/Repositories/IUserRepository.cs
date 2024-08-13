@@ -12,7 +12,7 @@ namespace Gadget_Gourmet.Models.Repositories
         {
             bool retVal = false;
 
-            string? query = @"select * from user where username = @un and password = @pswd;";
+            string? query = @"select * from [user] where username = @un and password = @pswd;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -29,24 +29,44 @@ namespace Gadget_Gourmet.Models.Repositories
             return retVal;
         }
 
-        public bool Signup(User user)
-        {
-            using (SqlConnection connection = new(connectionString))
-            {
-                connection.Open();
-                string? query = @"Insert into user (username, email, password) values (@un,@email,@pswd)";
-                using (SqlCommand cmd = new(query, connection))
-                {
-                    cmd.Parameters.Add("@un", SqlDbType.VarChar).Value = user.UserName?.Trim() ?? "None";
-                    cmd.Parameters.Add("@pswd", SqlDbType.VarChar).Value = user.Password?.Trim() ?? "Not Set";
-                    cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = user.Email?.Trim() ?? "Not Set";
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected == 1;
-                }
-            }
-        }
+		public bool Signup(User user)
+		{
+			using (SqlConnection connection = new(connectionString))
+			{
+				connection.Open();
+				string? query = @"Insert into [user] (username, email, password) values (@un, @email, @pswd)";
+				using (SqlCommand cmd = new(query, connection))
+				{
+					cmd.Parameters.Add("@un", SqlDbType.VarChar).Value = user.UserName?.Trim() ?? "None";
+					cmd.Parameters.Add("@pswd", SqlDbType.VarChar).Value = user.Password?.Trim() ?? "Not Set";
+					cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = user.Email?.Trim() ?? "Not Set";
+					int rowsAffected = cmd.ExecuteNonQuery();
+					return rowsAffected == 1;
+				}
+			}
+		}
 
-        public bool PersonalInfo(User user)
+		public bool IdExists(User user)
+		{
+			using (SqlConnection connection = new(connectionString))
+			{
+				connection.Open();
+				string? query = "select * from [user] where username = @un or email = @email;";
+				using (SqlCommand cmd = new(query, connection))
+				{
+					cmd.Parameters.AddWithValue("@un", user.UserName);
+					cmd.Parameters.AddWithValue("@email", user.Email);
+
+					using (SqlDataReader reader = cmd.ExecuteReader())
+					{
+						return reader.Read();
+					}
+				}
+			}
+		}
+
+
+		public bool PersonalInfo(User user)
         {
             using (SqlConnection connection = new(connectionString))
             {
@@ -65,6 +85,7 @@ namespace Gadget_Gourmet.Models.Repositories
                 }
             }
         }
+
 
         public User GetUserByUserName(string? un)
         {

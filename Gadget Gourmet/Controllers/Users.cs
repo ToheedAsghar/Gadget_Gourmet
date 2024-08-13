@@ -21,16 +21,25 @@ namespace Gadget_Gourmet.Controllers
         [HttpPost]
         public IActionResult Login(User user)
         {
+			if(user.UserName == "None")
+			{
+				user.UserName = user.Email;
+			}
+			else
+			{
+				user.Email = user.UserName;
+			}
+
             IUserRepository repo = new IUserRepository();
             bool retVal = repo.Login(user);
 
             if (retVal)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Profile", "Users");
             }
             else
             {
-                return RedirectToAction("Login", "Home");
+                return RedirectToAction("Login", "Users");
             }
         }
 
@@ -40,50 +49,58 @@ namespace Gadget_Gourmet.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Signup(User user)
-        {
-            String[] strs = new String[1];
-            CookieOptions options = new()
-            {
-                Expires = System.DateTime.Now.AddDays(7)
-            };
+		[HttpPost]
+		public IActionResult Signup(User user)
+		{
+			string[] strs;
+			string? Data = string.Empty;
+			CookieOptions options = new()
+			{
+				Expires = DateTime.Now.AddDays(7)
+			};
 
-            string? Data = string.Empty;
-            if (HttpContext.Request.Cookies.ContainsKey("flag"))
-            {
-                HttpContext.Response.Cookies.Append("flag", Data, options);
-                Data = HttpContext.Request.Cookies["flag"];
-                strs = Data.Split("|");
-            }
-            else
-            {
-                Data = user.UserName + "|" + user.Email;
-                HttpContext.Response.Cookies.Append("flag", Data, options);
-            }
+			if (HttpContext.Request.Cookies.ContainsKey("flag"))
+			{
+				Data = HttpContext.Request.Cookies["flag"];
+				strs = Data.Split("|");
+			}
+			else
+			{
+				Data = user.UserName + "|" + user.Email;
+				HttpContext.Response.Cookies.Append("flag", Data, options);
+				strs = new string[] { user.UserName, user.Email };
+			}
 
-            IUserRepository repo = new IUserRepository();
-            bool retVal = repo.Signup(user);
+			IUserRepository repo = new IUserRepository();
 
-            if (retVal)
-            {
-                return RedirectToAction("Index", "Home", strs);
-            }
-            else
-            {
-                return RedirectToAction("Signup", "Home");
-            }
-        }
+			bool retVal = !repo.IdExists(user) && repo.Signup(user);
+
+			if (retVal)
+			{
+				return RedirectToAction("Index", "Home", new { values = strs });
+			}
+			else
+			{
+				return RedirectToAction("Signup", "Users");
+			}
+		}
 
 
-        public IActionResult Cart()
+
+		public IActionResult Cart()
 		{
 			return View();
 		}
 
 		public IActionResult Profile()
 		{
-			return View();
+            User user = new User("None", "None", "None", "None", "none", "None", "None", DateOnly.MinValue);
+			return View(user);
 		}
+
+        public IActionResult EditProfile()
+        {
+            return View();
+        }
 	}
 }
