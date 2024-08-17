@@ -10,6 +10,8 @@
         public string? Manufacturer { get; set; }
         public int Category { get; set; }
 
+        public int Quantity { get; set; }
+
         public Product(string? name, string? desc, string? weight, string? color,string? manufacturer,int category)
         {
             Name = name;

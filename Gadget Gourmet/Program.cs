@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUser, UserRepository>();
+builder.Services.AddScoped(typeof(IGeneric<>), typeof(Generic<>));
 
 var app = builder.Build();
 
