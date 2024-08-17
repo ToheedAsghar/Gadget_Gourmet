@@ -22,32 +22,44 @@ namespace Gadget_Gourmet.Models.Repositories
 			}
 			return entity;
 		}
-
-		bool IGeneric<T>.InsertAsync(T Entity)
+		void IGeneric<T>.Insert(T Entity)
 		{
-			using (SqlConnection conn = new(_connectionString))
+			try
 			{
-				conn.Open();
-				var tableName = typeof(T).Name;
-				var properties = typeof(T).GetProperties().Where(p => p.Name != "Id");
-				var columnNames = string.Join(",", properties.Select(p => p.Name));
-				var parameterNames = string.Join(",", properties.Select(p => "@" + p.Name));
-
-				string? Query = $"insert into {tableName} ({columnNames}) values ({parameterNames})";
-				using (SqlCommand cmd = new(Query, conn))
+				using (SqlConnection conn = new(_connectionString))
 				{
-					foreach (var property in properties)
-					{
-						cmd.Parameters.AddWithValue("@" + property.Name, property.GetValue(Entity));
-					}
+					conn.Open();
+					var tableName = typeof(T).Name;
+					var properties = typeof(T).GetProperties().Where(p => p.Name != "Id");
+					var columnNames = string.Join(",", properties.Select(p => p.Name));
+					var parameterNames = string.Join(",", properties.Select(p => "@" + p.Name));
 
-					int retVal = cmd.ExecuteNonQuery();
-					return retVal == 1;
+					// Validate table name and column names to prevent SQL injection
+					// Example: Implement validation or use a whitelist approach
+
+					string query = $"INSERT INTO {tableName} ({columnNames}) VALUES ({parameterNames})";
+					using (SqlCommand cmd = new(query, conn))
+					{
+						foreach (var property in properties)
+						{
+							var parameterName = "@" + property.Name;
+							var value = property.GetValue(Entity);
+							// Use appropriate SqlDbType and handle null values
+							cmd.Parameters.AddWithValue(parameterName, value ?? DBNull.Value);
+						}
+
+						int retVal = cmd.ExecuteNonQuery();
+					}
 				}
 			}
+			catch (Exception ex)
+			{
+				// Handle exceptions appropriately
+				// Example: Log the exception and/or rethrow or handle as needed
+				throw new InvalidOperationException("An error occurred while inserting the entity.", ex);
+			}
 		}
-
-		bool IGeneric<T>.UpdateAsync(T Entity)
+		void IGeneric<T>.Update(T Entity)
 		{
 			using (SqlConnection conn = new(_connectionString))
 			{
@@ -69,12 +81,10 @@ namespace Gadget_Gourmet.Models.Repositories
 					cmd.Parameters.AddWithValue("@" + primaryKey, typeof(T).GetProperty(primaryKey).GetValue(Entity));
 
 					int retVal = cmd.ExecuteNonQuery();
-					return retVal == 1;
 				}
 			}
 		}
-
-		bool IGeneric<T>.DeleteAsync(object Id)
+		void IGeneric<T>.Delete(int Id)
 		{
 			using (SqlConnection conn = new(_connectionString))
 			{
@@ -86,13 +96,11 @@ namespace Gadget_Gourmet.Models.Repositories
 				using (SqlCommand cmd = new(Query, conn))
 				{
 					cmd.Parameters.AddWithValue("@id", Id);
-					int retVal = cmd.ExecuteNonQuery();
-					return retVal == 1;
+					cmd.ExecuteNonQuery();
 				}
 			}
 		}
-
-		T IGeneric<T>.GetByIdAsync(object Id)
+		T IGeneric<T>.GetById(int  Id)
 		{
 			using (SqlConnection conn = new(_connectionString))
 			{
@@ -114,8 +122,7 @@ namespace Gadget_Gourmet.Models.Repositories
 				}
 			}
 		}
-
-		IEnumerable<T> IGeneric<T>.GetAllAsync()
+		IEnumerable<T> IGeneric<T>.GetAll()
 		{
 			using (SqlConnection conn = new(_connectionString))
 			{

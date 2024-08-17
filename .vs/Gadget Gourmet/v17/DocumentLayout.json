@@ -3,119 +3,69 @@
   "WorkspaceRootPath": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\admin\\removeproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\admin\\removeproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\models\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\models\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\models\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\models\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/GadgetGourmentDB/True/SqlTable/dbo.product.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Models\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Entities\\User.cs",
-              "RelativeToolTip": "Gadget Gourmet\\Models\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T08:38:25.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Users\\Login.cshtml",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Users\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Users\\Login.cshtml",
-              "RelativeToolTip": "Gadget Gourmet\\Views\\Users\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-17T08:33:39.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StoreController.cs",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\StoreController.cs",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Controllers\\StoreController.cs",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\StoreController.cs",
-              "RelativeToolTip": "Gadget Gourmet\\Controllers\\StoreController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T08:32:46.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Models\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Gadget Gourmet\\Models\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T04:37:35.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Gadget Gourmet\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T09:59:48.091Z",
+              "Title": "dbo.product [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/GadgetGourmentDB/True/SqlTable/dbo.product.sql",
+              "ToolTip": "dbo.product [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-17T18:18:33.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Interface\\IUser.cs",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Models\\Interface\\IUser.cs",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Models\\Interface\\IUser.cs",
-              "RelativeToolTip": "Gadget Gourmet\\Models\\Interface\\IUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RemoveProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\RemoveProduct.cshtml",
+              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Admin\\RemoveProduct.cshtml",
+              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\RemoveProduct.cshtml",
+              "RelativeToolTip": "Gadget Gourmet\\Views\\Admin\\RemoveProduct.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T18:10:03.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Gadget Gourmet\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Gadget Gourmet\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T07:25:42.604Z"
+              "WhenOpened": "2024-08-17T17:17:32.899Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -8,6 +8,20 @@ html {
     }
 }
 
+.validation-summary-errors {
+    font-family: Noah;
+    list-style-type: none;
+    padding-left: 0; 
+    margin-left: 0; 
+    color: darkred;
+}
+
+.input-validation-error{
+    border: 3px solid;
+    border-color: darkred;
+
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }

@@ -2,6 +2,7 @@
 {
 	public class User
 	{
+		public int Id { get; set; }
 		public string? Name { get; set; } = "None";
 		public string? UserName { get; set; } = "None";
 		public string? Password { get; set; } = "None";
@@ -14,6 +15,7 @@
 		// Parameterless constructor
 		public User()
 		{
+			Id = -1;
 		}
 		public User(string? name, string? username, string? password, string? email, string? address, string? phone, string? gender, DateOnly dateofbirth)
 		{

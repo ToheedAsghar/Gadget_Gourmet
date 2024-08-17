@@ -1,3 +1,4 @@
+using Gadget_Gourmet.Models.Entities;
 using Gadget_Gourmet.Models.Interface;
 using Gadget_Gourmet.Models.Repositories;
 
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUser, UserRepository>();
-builder.Services.AddScoped(typeof(IGeneric<>), typeof(Generic<>));
+builder.Services.AddScoped<IGeneric<Product>, Generic<Product> >(); // Register ProductRepository as the implementation of IGeneric<Product>
 
 var app = builder.Build();
 
