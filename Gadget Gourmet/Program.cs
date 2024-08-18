@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 //builder.Services.AddScoped<IUser, UserRepository>();
 builder.Services.AddScoped<IGeneric<Product>, Generic<Product> >(); 
 builder.Services.AddScoped<IGeneric<User>, Generic<User> >();
+builder.Services.AddScoped<IGeneric<Category>, Generic<Category> >();
 
 var app = builder.Build();
 

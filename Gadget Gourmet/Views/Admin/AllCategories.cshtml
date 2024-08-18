@@ -1,0 +1,68 @@
+﻿@model List<Gadget_Gourmet.Models.Entities.Category>
+
+<span class="display-1 mt-2 ps-md-2 fw-bold text-uppercase" style="font-family: Noah; font-size:170%;">
+	Categories
+</span>
+
+<table class="table table-bordered table-hover mb-md-5 mt-4">
+	<thead class="thead-dark text-uppercase text-center" style="background-color: gainsboro">
+		<tr>
+			<th> Category Id</th>
+			<th> Category Name</th>
+			<th> Actions </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var category in Model)
+		{
+			<tr>
+				<td>
+					@category.Id
+				</td>
+
+				<td>
+					@category.Name
+				</td>
+
+				<td class="d-flex justify-content-md-center align-items-md-center">
+					<div class="row">
+						<div class="col-md-6 col-12 order-0 ">
+							<a class="btn btn-warning btn-sm rounded-pill"
+							   asp-action="UpdateCategory"
+							   asp-controller="Admin"
+							   asp-route-id="@category.Id"
+							   role="button"
+							   aria-label="Edit Category"
+							   style="background: #f1c40f; border: none; color: black; padding: 0.5rem 1rem; font-size: 0.875rem; width: 120px; text-align: center; display: inline-block; transition: transform 0.3s, background 0.3s;"
+							   onmouseover="this.style.background='#e0b90f'; this.style.transform='scale(1.05)';"
+							   onmouseout="this.style.background='#f1c40f'; this.style.transform='';">
+								<i class="fa fa-edit"></i> Edit
+							</a>
+						</div>
+
+						<div class="col-md-6 col-12 order-1 mt-sm-2 mt-md-0">
+							<a class="btn btn-danger btn-sm rounded-pill"
+							asp-controller="Admin"
+							   asp-action="RemoveCategory"
+							   asp-route-id="@category.Id"
+							   role="button"
+							   aria-label="Remove Category"
+							   style="background: #3381f6; border: none; color: white; padding: 0.5rem 1rem; font-size: 0.875rem; width: 120px; text-align: center; display: inline-block; transition: transform 0.3s, background 0.3s;"
+							   onmouseover="this.style.background='#1e5bb7'; this.style.transform='scale(1.05)';"
+							   onmouseout="this.style.background='#3381f6'; this.style.transform='';">
+								<i class="fa fa-trash"></i> Remove
+							</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@if (Model == null || !Model.Any())
+{
+	<div class="alert alert-warning mt-4">
+		No Users found.
+	</div>
+}

@@ -23,8 +23,8 @@ namespace Gadget_Gourmet.Models.Entities
 		public string? Gender { get; set; } = string.Empty;
 		public DateTime DateOfBirth { get; set; } = DateTime.MinValue;
 
-		// Parameterless constructor
-		public User()
+        // Parameterless constructor
+        public User()
 		{
 			Id = -1;
 		}
