@@ -18,17 +18,17 @@ namespace Gadget_Gourmet.Controllers
             _categoryRepo = categoryRepo;
 		}
 
-		// In the index page, admin will be shown all CRUD Operations
+		/* All CRUD Operations for Admin will be Shown in Index */
 		public IActionResult Index(string Message)
 		{
 			return View();
 		}
 
-		#region Product CRUD Operations
+        #region Product CRUD Operations
 
-		/* Add Product */
+        #region Add Product
 
-		public IActionResult AddProduct(int? id)
+        public IActionResult AddProduct(int? id)
 		{
 			Product prod;
 			if (id.HasValue && id.Value > 0)
@@ -56,9 +56,10 @@ namespace Gadget_Gourmet.Controllers
 			return RedirectToAction("Index", "Admin", new { message = msg });
 		}
 
-		/* Remove Product */
+        #endregion
 
-		[HttpGet]
+        #region Remove Product
+        [HttpGet]
 		public IActionResult RemoveProduct()
 		{
 			return View();
@@ -88,10 +89,11 @@ namespace Gadget_Gourmet.Controllers
 			}
 		}
 
+        #endregion
 
-		/* Update Product */
+        #region Update Product
 
-		[HttpGet]
+        [HttpGet]
 		public IActionResult UpdateProduct()
 		{
 			return View();
@@ -166,16 +168,22 @@ namespace Gadget_Gourmet.Controllers
             return View(product);
         }
 
-		/* View All Products */
-		public IActionResult AllProducts()
+        #endregion
+
+        #region  View All Products
+        public IActionResult AllProducts()
 		{
 			List<Product> products = _productRepo.GetAll().ToList();
 			return View(products);
 		}
-		#endregion
+        #endregion
 
-		#region User CRUD Operations
-		[HttpGet]
+        #endregion
+
+        #region User CRUD Operations
+
+        #region Add User
+        [HttpGet]
 		public IActionResult AddUser(int? id)
 		{
 			User user;
@@ -212,8 +220,10 @@ namespace Gadget_Gourmet.Controllers
 			return RedirectToAction("Index", "Admin", new { message = msg });
 		}
 
+        #endregion
 
-		[HttpGet]
+        #region Remove User
+        [HttpGet]
 		public IActionResult RemoveUser()
 		{
 			return View();
@@ -242,9 +252,10 @@ namespace Gadget_Gourmet.Controllers
 				return View();
 			}
 		}
+        #endregion
 
-
-		[HttpGet]
+        #region Update User
+        [HttpGet]
 		public IActionResult UpdateUser()
 		{
 			return View();
@@ -319,20 +330,22 @@ namespace Gadget_Gourmet.Controllers
             return View(user);
         }
 
+        #endregion
 
-        /* View All Users */
+        #region View All Users
         public IActionResult AllUsers()
 		{
 			List<User> users = _userRepo.GetAll().ToList();
 			return View(users);
 		}
+        #endregion
 
-		#endregion
+        #endregion
 
-		#region Category CRUD Operations
+        #region Category CRUD Operations
 
-		#region Add Category
-		[HttpGet]
+        #region Add Category
+        [HttpGet]
         public IActionResult AddCategory(int? id)
         {
             Category category;
@@ -471,14 +484,15 @@ namespace Gadget_Gourmet.Controllers
             return View(category);
         }
 
-		#endregion
+        #endregion
 
-		
-		public IActionResult AllCategories()
+        #region View All Categories
+        public IActionResult AllCategories()
         {
             List<Category> categories  = _categoryRepo.GetAll().ToList();
             return View(categories);
         }
+        #endregion
 
         #endregion
     }

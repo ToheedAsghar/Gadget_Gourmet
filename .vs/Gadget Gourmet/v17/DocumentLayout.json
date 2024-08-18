@@ -3,27 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/GadgetGourmentDB/True/SqlTable/dbo.category.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\admin\\updatecategorydetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\admin\\updatecategorydetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\admin\\updateproductdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\admin\\updateproductdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|c:\\users\\toheed\\source\\repos\\gadget gourmet\\gadget gourmet\\views\\admin\\updateuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7EC657F0-2E45-4F48-AECA-D1FA22DC730A}|Gadget Gourmet\\Gadget Gourmet.csproj|solutionrelative:gadget gourmet\\views\\admin\\updateuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,70 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Gadget Gourmet\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T11:28:16.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateProductDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\UpdateProductDetails.cshtml",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Admin\\UpdateProductDetails.cshtml",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\UpdateProductDetails.cshtml",
-              "RelativeToolTip": "Gadget Gourmet\\Views\\Admin\\UpdateProductDetails.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAywFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T11:26:42.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateCategoryDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\UpdateCategoryDetails.cshtml",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Admin\\UpdateCategoryDetails.cshtml",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\UpdateCategoryDetails.cshtml",
-              "RelativeToolTip": "Gadget Gourmet\\Views\\Admin\\UpdateCategoryDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T11:26:35.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\UpdateUser.cshtml",
-              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Admin\\UpdateUser.cshtml",
-              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\UpdateUser.cshtml",
-              "RelativeToolTip": "Gadget Gourmet\\Views\\Admin\\UpdateUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T11:24:34.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.category [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/GadgetGourmentDB/True/SqlTable/dbo.category.sql",
-              "ToolTip": "dbo.category [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-18T11:23:05.4Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -108,12 +31,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\AddProduct.cshtml",
+              "RelativeDocumentMoniker": "Gadget Gourmet\\Views\\Admin\\AddProduct.cshtml",
+              "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Views\\Admin\\AddProduct.cshtml",
+              "RelativeToolTip": "Gadget Gourmet\\Views\\Admin\\AddProduct.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T12:19:38.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Gadget Gourmet\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\Toheed\\source\\repos\\Gadget Gourmet\\Gadget Gourmet\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Gadget Gourmet\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAALwBAAAAAAAAAAAUwNIBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T17:17:32.899Z",
               "EditorCaption": ""
