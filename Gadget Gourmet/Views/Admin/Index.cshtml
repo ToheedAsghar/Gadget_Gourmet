@@ -1,3 +1,21 @@
 ﻿@model string
 
 @Model
+
+<h2>Manage Products</h2>
+<div>
+	<a asp-action="AddProduct" asp-controller="Admin">Add Product</a>
+</div>
+
+<div>
+	<a asp-action="UpdateProduct" asp-controller="Admin">Update Product</a>
+
+</div>
+
+<div>
+	<a asp-action="RemoveProduct" asp-controller="Admin">Delete Product</a>
+</div>
+
+<div>
+	<a asp-action="AllProducts" asp-controller="Admin">View All Products</a>
+</div>

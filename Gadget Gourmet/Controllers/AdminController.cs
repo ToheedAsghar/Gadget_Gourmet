@@ -21,6 +21,8 @@ namespace Gadget_Gourmet.Controllers
 
 		#region Product CRUD Operations
 
+		/* Add Product */
+
 		public IActionResult AddProduct(int? id)
 		{
 			Product prod;
@@ -48,6 +50,8 @@ namespace Gadget_Gourmet.Controllers
 			string msg = string.Empty;
 			return RedirectToAction("Index", "Admin", new { message = msg });
 		}
+
+		/* Remove Product */
 
 		[HttpGet]
 		public IActionResult RemoveProduct()
@@ -80,6 +84,89 @@ namespace Gadget_Gourmet.Controllers
 		}
 
 
-		#endregion
-	}
+		/* Update Product */
+
+		[HttpGet]
+		public IActionResult UpdateProduct()
+		{
+			return View();
+		}
+
+        [HttpPost]
+        public IActionResult UpdateProduct(int id)
+        {
+
+            Product check = _productRepo.GetById(id);
+            if (check != null)
+            {
+                try
+                {
+					return RedirectToAction("UpdateProductDetails", "Admin", new { Id=id });
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.ErrorMessage = "Something Went Wrong on Our End!";
+                    return View();
+                }
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Product not found!";
+                return View();
+            }
+        }
+
+        [HttpGet]
+        public IActionResult UpdateProductDetails(int Id)
+        {
+            Product product = _productRepo.GetById(Id);
+            return View(product);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateProductDetails(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var existingProduct = _productRepo.GetById(product.Id);
+                    if (existingProduct == null)
+                    {
+                        ViewBag.ErrorMessage = "Product not found!";
+                        return View(product);
+                    }
+
+                    // Update the fields you want to allow modification, but ensure the Id remains intact
+                    existingProduct.Name = product.Name;
+                    existingProduct.Description = product.Description;
+                    existingProduct.Weight = product.Weight;
+                    existingProduct.Price = product.Price;
+                    existingProduct.Color = product.Color;
+                    existingProduct.Manufacturer = product.Manufacturer;
+                    existingProduct.Category = product.Category;
+                    existingProduct.Quantity = product.Quantity;
+
+                    _productRepo.Update(existingProduct);
+                    return RedirectToAction("Index", "Admin", new { msg = "Product Updated Successfully!" });
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.ErrorMessage = "Something Went Wrong on Our End!";
+                    return View(product);
+                }
+            }
+
+            ModelState.AddModelError(string.Empty, "Please Resolve the Errors and Try Again!");
+            return View(product);
+        }
+
+		/* View All Products */
+		public IActionResult AllProducts()
+		{
+			List<Product> products = _productRepo.GetAll().ToList();
+			return View(products);
+		}
+        #endregion
+    }
 }

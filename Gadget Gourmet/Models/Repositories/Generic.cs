@@ -15,10 +15,7 @@ namespace Gadget_Gourmet.Models.Repositories
 			var entity = Activator.CreateInstance<T>();
 			foreach (var property in typeof(T).GetProperties())
 			{
-				if (property.Name != "Id")
-				{
-					property.SetValue(entity, reader[property.Name]);
-				}
+				property.SetValue(entity, reader[property.Name]);
 			}
 			return entity;
 		}
