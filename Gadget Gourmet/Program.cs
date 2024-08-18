@@ -7,8 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IUser, UserRepository>();
-builder.Services.AddScoped<IGeneric<Product>, Generic<Product> >(); // Register ProductRepository as the implementation of IGeneric<Product>
+//builder.Services.AddScoped<IUser, UserRepository>();
+builder.Services.AddScoped<IGeneric<Product>, Generic<Product> >(); 
+builder.Services.AddScoped<IGeneric<User>, Generic<User> >();
 
 var app = builder.Build();
 

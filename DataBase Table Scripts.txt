@@ -1,15 +1,17 @@
 CREATE TABLE [dbo].[user] (
     [Id]          INT           IDENTITY (1, 1) NOT NULL,
-    [name]        VARCHAR (32)  DEFAULT ('None') NOT NULL,
+    [name]        VARCHAR (32)  DEFAULT ('None'),
     [username]    VARCHAR (32)  DEFAULT ('None') NOT NULL,
     [password]    VARCHAR (32)  DEFAULT ('None') NOT NULL,
     [email]       VARCHAR (32)  DEFAULT ('None') NOT NULL,
-    [address]     VARCHAR (100) DEFAULT ('None') NOT NULL,
-    [phone]       VARCHAR (13)  DEFAULT ('None') NOT NULL,
-    [gender]      VARCHAR (20)  DEFAULT ('None') NOT NULL,
+    [address]     VARCHAR (100) DEFAULT ('None'),
+    [phone]       VARCHAR (13)  DEFAULT ('None'),
+    [gender]      VARCHAR (20)  DEFAULT ('None'),
     [dateofbirth] DATE          NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
+
 
 CREATE TABLE [dbo].[review] (
     [Id]          INT           IDENTITY (1, 1) NOT NULL,

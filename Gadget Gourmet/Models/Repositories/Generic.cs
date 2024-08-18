@@ -34,7 +34,7 @@ namespace Gadget_Gourmet.Models.Repositories
 					// Validate table name and column names to prevent SQL injection
 					// Example: Implement validation or use a whitelist approach
 
-					string query = $"INSERT INTO {tableName} ({columnNames}) VALUES ({parameterNames})";
+					string query = $"INSERT INTO [{tableName}] ({columnNames}) VALUES ({parameterNames})";
 					using (SqlCommand cmd = new(query, conn))
 					{
 						foreach (var property in properties)
@@ -67,7 +67,7 @@ namespace Gadget_Gourmet.Models.Repositories
 				var properties = typeof(T).GetProperties().Where(p => p.Name != primaryKey);
 
 				var setClause = string.Join(",", properties.Select(p => $"{p.Name} = @{p.Name}"));
-				var Query = $"UPDATE {tableName} SET {setClause} WHERE {primaryKey} = @{primaryKey};";
+				var Query = $"UPDATE [{tableName}] SET {setClause} WHERE {primaryKey} = @{primaryKey};";
 
 				using (SqlCommand cmd = new(Query, conn))
 				{
@@ -89,7 +89,7 @@ namespace Gadget_Gourmet.Models.Repositories
 				var tableName = typeof(T).Name;
 				var primaryKey = "Id";
 
-				string Query = $"Delete from {tableName} where {primaryKey}=@id";
+				string Query = $"Delete from [{tableName}] where {primaryKey}=@id";
 				using (SqlCommand cmd = new(Query, conn))
 				{
 					cmd.Parameters.AddWithValue("@id", Id);
@@ -104,7 +104,7 @@ namespace Gadget_Gourmet.Models.Repositories
 				conn.Open();
 				var tableName = typeof(T).Name;
 				var primaryKey = "Id";
-				string? Query = $"Select * from {tableName} where {primaryKey} = @pk ";
+				string? Query = $"Select * from [{tableName}] where {primaryKey} = @pk ";
 				using (SqlCommand cmd = new(Query, conn))
 				{
 					cmd.Parameters.AddWithValue("@pk", Id);
@@ -125,7 +125,7 @@ namespace Gadget_Gourmet.Models.Repositories
 			{
 				conn.Open();
 				var tableName = typeof(T).Name;
-				string? Query = $"select * from {tableName} ";
+				string? Query = $"select * from [{tableName}] ";
 
 				using (SqlCommand cmd = new(Query, conn))
 				{

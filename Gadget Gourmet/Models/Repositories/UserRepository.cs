@@ -110,7 +110,7 @@ namespace Gadget_Gourmet.Models.Repositories
 								address: reader["address"] != DBNull.Value ? reader["address"].ToString() : null,
 								phone: reader["phone"] != DBNull.Value ? reader["phone"].ToString() : null,
 								gender: reader["gender"] != DBNull.Value ? reader["gender"].ToString() : null,
-								dateofbirth: reader["dateofbirth"] != DBNull.Value ? DateOnly.FromDateTime((DateTime)reader["dateofbirth"]) : DateOnly.MinValue
+								dateofbirth: reader["dateofbirth"] != DBNull.Value ? (DateTime)reader["dateofbirth"] : DateTime.MinValue
 							);
 						}
 					}
@@ -142,7 +142,7 @@ namespace Gadget_Gourmet.Models.Repositories
 								address: reader["address"] != DBNull.Value ? reader["address"].ToString() : null,
 								phone: reader["phone"] != DBNull.Value ? reader["phone"].ToString() : null,
 								gender: reader["gender"] != DBNull.Value ? reader["gender"].ToString() : null,
-								dateofbirth: reader["dateofbirth"] != DBNull.Value ? DateOnly.FromDateTime((DateTime)reader["dateofbirth"]) : DateOnly.MinValue
+								dateofbirth: reader["dateofbirth"] != DBNull.Value ? (DateTime)reader["dateofbirth"] : DateTime.MinValue
 							);
 						}
 					}
@@ -173,10 +173,11 @@ namespace Gadget_Gourmet.Models.Repositories
 								address: reader["address"] != DBNull.Value ? reader["address"].ToString() : null,
 								phone: reader["phone"] != DBNull.Value ? reader["phone"].ToString() : null,
 								gender: reader["gender"] != DBNull.Value ? reader["gender"].ToString() : null,
-								dateofbirth: reader["dateofbirth"] != DBNull.Value ? DateOnly.FromDateTime((DateTime)reader["dateofbirth"]) : DateOnly.MinValue
+								dateofbirth: reader["dateofbirth"] != DBNull.Value ? (DateTime)reader["dateofbirth"] : DateTime.MinValue
 							);
 							return user;
 						}
+
 					}
 				}
 			}

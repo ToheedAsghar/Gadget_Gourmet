@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gadget Gourmet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9c35abb3cf33c2e96fbfba274026bf75ea3cf9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8657f3db66fad9cb543ea78945b4880c350a9e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gadget Gourmet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gadget Gourmet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
