@@ -39,7 +39,6 @@ namespace Gadget_Gourmet.Controllers
 		{
 			if (!ModelState.IsValid)
 			{
-				// If the model is invalid, return the same view with validation messages
 				ModelState.AddModelError(string.Empty, "Resolve the Errors and Try Again!");
 				return View();
 			}
@@ -62,14 +61,24 @@ namespace Gadget_Gourmet.Controllers
 			Product check = _productRepo.GetById(id);
 			if (check != null)
 			{
-				_productRepo.Delete(id);
-				return RedirectToAction("Index", "Admin", new { msg = "Product Removed Successfully!" });
+				try
+				{
+					_productRepo.Delete(id);
+					return RedirectToAction("Index", "Admin", new { msg = "Product Removed Successfully!" });
+				}
+				catch (Exception ex)
+				{
+					ViewBag.ErrorMessage = "An error occurred while trying to remove the product.";
+					return View();
+				}
 			}
 			else
 			{
+				ViewBag.ErrorMessage = "Product not found!";
 				return View();
 			}
 		}
+
 
 		#endregion
 	}

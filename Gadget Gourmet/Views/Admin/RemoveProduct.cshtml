@@ -1,6 +1,4 @@
-﻿@model string
-
-<span class="display-1 mt-2 ps-md-2 fw-bold text-uppercase" style="font-family: Noah; font-size:170%;">
+﻿<span class="display-1 mt-2 ps-md-2 fw-bold text-uppercase" style="font-family: Noah; font-size:170%;">
     Remove Product
 </span>
 
@@ -14,9 +12,10 @@
         </div>
     </div>
 
-    <div class="bg-danger">
-        @Model
-    </div>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
 
     <button type="submit" class="custom-button text-center">Remove</button>
 </form>
