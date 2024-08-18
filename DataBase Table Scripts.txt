@@ -1,13 +1,13 @@
 CREATE TABLE [dbo].[user] (
     [Id]          INT           IDENTITY (1, 1) NOT NULL,
-    [name]        VARCHAR (32)  DEFAULT ('None'),
+    [name]        VARCHAR (32)  DEFAULT ('None') NULL,
     [username]    VARCHAR (32)  DEFAULT ('None') NOT NULL,
     [password]    VARCHAR (32)  DEFAULT ('None') NOT NULL,
     [email]       VARCHAR (32)  DEFAULT ('None') NOT NULL,
-    [address]     VARCHAR (100) DEFAULT ('None'),
-    [phone]       VARCHAR (13)  DEFAULT ('None'),
-    [gender]      VARCHAR (20)  DEFAULT ('None'),
-    [dateofbirth] DATE          NULL,
+    [address]     VARCHAR (100) DEFAULT ('None') NULL,
+    [phone]       VARCHAR (13)  DEFAULT ('None') NULL,
+    [gender]      VARCHAR (32)  DEFAULT ('None') NULL,
+    [dateofbirth] DATE          DEFAULT ('2000-01-01') NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
@@ -37,6 +37,8 @@ CREATE TABLE [dbo].[product] (
     PRIMARY KEY CLUSTERED ([Id] ASC),
     CHECK ([quantity]>=(0))
 );
+
+
 
 CREATE TABLE [dbo].[category] (
     [Id]   INT          IDENTITY (1, 1) NOT NULL,
