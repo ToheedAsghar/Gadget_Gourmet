@@ -1,0 +1,30 @@
+﻿@model Gadget_Gourmet.Models.Entities.Product
+
+<div class="container my-4">
+	<div class="d-flex justify-content-between align-items-center border-bottom pb-3">
+		<h1 class="h3">Product Name: {{Name}}</h1>
+		<span class="text-muted">Product ID: {{ID}}</span>
+	</div>
+
+	<div class="row mt-4">
+		<div class="col-md-5 mb-4 mb-md-0">
+			<img src="product-image-url.jpg" class="img-fluid rounded" alt="Product Image">
+		</div>
+
+		<div class="col-md-7">
+			<h2 class="h5">Description</h2>
+			<p>{{Description}}</p>
+
+			<p><strong>Price:</strong> {{Price}}</p>
+			<p><strong>Weight:</strong> {{Weight}} kg</p>
+			<p><strong>Color:</strong> {{Color}} </p>
+			<p><strong>Manufacturer:</strong> {{Manufacturer}}</p>
+			<p><strong>Category:</strong> {{Category}}</p>
+
+			<div class="mt-4">
+				<button class="btn btn-success me-2">Add to Cart</button>
+				<button class="btn btn-primary">Buy Now</button>
+			</div>
+		</div>
+	</div>
+</div>

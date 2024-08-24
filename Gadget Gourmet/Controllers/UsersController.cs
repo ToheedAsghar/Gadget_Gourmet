@@ -10,9 +10,11 @@ namespace Gadget_Gourmet.Controllers
 	public class UsersController : Controller
 	{
 		private readonly IUser _userRepository;
-		public UsersController(IUser userRepository)
+		private readonly IGeneric<User> _userRepo;
+		public UsersController(IUser userRepository, IGeneric<User> userRepo)
 		{
 			_userRepository = userRepository;
+			_userRepo = userRepo;
 		}
 		public IActionResult Index()
 		{
@@ -118,9 +120,57 @@ namespace Gadget_Gourmet.Controllers
 			return View(user);
 		}
 
-        public IActionResult EditProfile()
-        {
-            return View();
-        }
+		[HttpGet]
+		public IActionResult EditProfile(int id)
+		{
+			User user = _userRepo.GetById(id);
+			if (user != null)
+			{
+				return View(user);
+			}
+			else
+			{
+				ModelState.AddModelError(string.Empty, "User Doesn't Exists !");
+				return View();
+			}
+		}
+
+		[HttpPost]
+		public IActionResult EditProfile(User user)
+		{
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					var existingUser = _userRepo.GetById(user.Id);
+					if (existingUser == null)
+					{
+						ViewBag.ErrorMessage = "User not found!!!!";
+						return View(user);
+					}
+
+					// Update fields
+					existingUser.Name = string.IsNullOrEmpty(user.Name) ? existingUser.Name : user.Name;
+					existingUser.UserName = string.IsNullOrEmpty(user.UserName) ? existingUser.UserName : user.UserName;
+					existingUser.Address = string.IsNullOrEmpty(user.Address) ? existingUser.Address : user.Address;
+					existingUser.Email = string.IsNullOrEmpty(user.Email) ? existingUser.Email : user.Email;
+					existingUser.Phone = string.IsNullOrEmpty(user.Phone) ? existingUser.Phone : user.Phone;
+					existingUser.DateOfBirth = user.DateOfBirth;
+					existingUser.Gender = string.IsNullOrEmpty(user.Gender) ? existingUser.Gender : user.Gender;
+					existingUser.Password = user.Password;
+
+					_userRepo.Update(existingUser);
+					return RedirectToAction("Profile", "Users", new {user=existingUser});
+				}
+				catch (Exception)
+				{
+					ViewBag.ErrorMessage = "Something Went Wrong on Our End!";
+					return View(user);
+				}
+			}
+
+			ModelState.AddModelError(string.Empty, "Please Resolve the Errors and Try Again!");
+			return View(user);
+		}
 	}
 }

@@ -8,16 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Users\EditProfile.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Users\EditProfile.cshtml" />
     <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Users\EditProfile.cshtml" />
     <None Include="wwwroot\Images\icons\fb.jpg" />
     <None Include="wwwroot\Images\icons\instagram.png" />
     <None Include="wwwroot\Images\icons\tiktok.png" />
@@ -25,10 +19,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Users\EditProfile.cshtml" />
   </ItemGroup>
 
 </Project>
