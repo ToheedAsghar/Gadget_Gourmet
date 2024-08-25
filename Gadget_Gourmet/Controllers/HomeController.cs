@@ -1,7 +1,6 @@
 using Gadget_Gourmet.Models.Entities;
 using Gadget_Gourmet.Models.Repositories;
 using Gadget_Gourmet.Models.Interface;
-using Gadget_Gourmet.Models.Repositories;
 using Gadget_Gourmet.Extensions;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
@@ -65,6 +64,53 @@ namespace Gadget_Gourmet.Controllers
             return View(pagesVisited);
         }
 
+        public IActionResult Return()
+        {
+            return View();
+        }
 
-    }
+		[HttpPost]
+		public IActionResult Return(Return model)
+		{
+			if (ModelState.IsValid)
+			{
+				string invoicePathUrl = null;
+
+				if (model.Invoice != null && model.Invoice.Length > 0)
+				{
+					var fileName = Path.GetFileName(model.Invoice.FileName);
+					var filePath = Path.Combine(Directory.GetCurrentDirectory(), "~/wwwroot/Images", fileName);
+
+					if (!Directory.Exists(filePath))
+					{
+						Directory.CreateDirectory(filePath);
+					}
+
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						model.Invoice.CopyTo(stream);
+					}
+
+					invoicePathUrl = "/Images/" + fileName;
+				}
+
+				// Save the return details including the invoicePathUrl to your database or processing system here
+
+				TempData["Message"] = "Return request submitted successfully.";
+				TempData["MessageType"] = "success";
+
+				return RedirectToAction("Confirmation");
+			}
+
+			// If the model is not valid, return the view with the model to show validation errors
+			return View(model);
+		}
+
+		public IActionResult Confirmation()
+		{
+			return View(); 
+		}
+
+
+	}
 }

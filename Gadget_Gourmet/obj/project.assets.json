@@ -4596,24 +4596,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Huzaifa Salman\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Toheed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Huzaifa Salman\\Desktop\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
+      "projectUniqueName": "C:\\Users\\Toheed\\Downloads\\Compressed\\Gadget_Gourmet-20240825T175158Z-001\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
       "projectName": "Gadget_Gourmet",
-      "projectPath": "C:\\Users\\Huzaifa Salman\\Desktop\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
-      "packagesPath": "C:\\Users\\Huzaifa Salman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Huzaifa Salman\\Desktop\\Gadget_Gourmet\\Gadget_Gourmet\\obj\\",
+      "projectPath": "C:\\Users\\Toheed\\Downloads\\Compressed\\Gadget_Gourmet-20240825T175158Z-001\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
+      "packagesPath": "C:\\Users\\Toheed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Toheed\\Downloads\\Compressed\\Gadget_Gourmet-20240825T175158Z-001\\Gadget_Gourmet\\Gadget_Gourmet\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Huzaifa Salman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Toheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4689,7 +4684,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

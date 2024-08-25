@@ -1,0 +1,89 @@
+﻿@model Gadget_Gourmet.Models.Entities.Return
+
+<form asp-action="Confirmation" asp-controller="Home" method="post" enctype="multipart/form-data" class="container mt-4 form-container">
+    <h2 class="text-center">Return Request</h2>
+    <div class="form-group">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="PhoneNumber">Phone Number:</label>
+        <input type="text" id="PhoneNumber" name="PhoneNumber" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Reason">Reason for Return:</label>
+        <textarea id="Reason" name="Reason" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Invoice">Upload Invoice:</label>
+        <input type="file" id="Invoice" name="Invoice" class="form-control-file" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Return</button>
+</form>
+
+
+<style>
+.form-container {
+    max-width: 50%;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%; /* Full width of the container */
+    /* max-width: 80%; */ /* Maximum width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+</style>
