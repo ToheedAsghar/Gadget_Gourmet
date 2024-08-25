@@ -1,0 +1,44 @@
+﻿@using Newtonsoft.Json
+@using Gadget_Gourmet.Models.Entities
+@model List<History>
+
+<h2>Page Visit History</h2>
+
+@if (User.Identity.IsAuthenticated)
+{
+    var userId = User.Identity.Name;
+    var sessionKey = $"PagesVisited_{userId}";
+    var pagesVisitedJson = Context.Session.GetString(sessionKey);
+    var model = !string.IsNullOrEmpty(pagesVisitedJson) ? JsonConvert.DeserializeObject<List<History>>(pagesVisitedJson) : new List<History>();
+
+    if (model.Count() > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Date and Time of Visit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in model.AsEnumerable().Reverse()) // Reverse the order of items
+                {
+                    <tr>
+                        <td>
+                            <a href="@item.PageUrl">@item.PageName</a>
+                        </td>
+                        <td>@item.PageTime</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No pages visited yet.</p>
+    }
+}
+else
+{
+    <p>Please log in to see your page visit history.</p>
+}

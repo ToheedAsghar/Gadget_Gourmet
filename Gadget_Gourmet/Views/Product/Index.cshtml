@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="product-detail" style="font-family: Noah">
+    <h1 class="display-3 fw-bold text-uppercase">Sponch Bob</h1>
+
+    <div class="product-image">
+        <img src="/Images/home_images/spoon-home.svg" alt="Product Name" />
+    </div>
+
+    <div class="product-info">
+        <p><strong>Description:</strong> This is a detailed description of the product. It highlights the key features and benefits of the product.</p>
+
+        <p>
+            <strong>Details:</strong>
+            <ul>
+                <li>Detail 1: Example detail about the product.</li>
+                <li>Detail 2: Another important detail.</li>
+                <li>Detail 3: Additional detail about the product.</li>
+            </ul>
+        </p>
+
+        <p><strong>Price:</strong> $99.99</p>
+    </div>
+
+    <div class="add-to-cart">
+        <button class="btn btn-primary">Add to Cart</button>
+    </div>
+
+    <div class="product-reviews">
+        <h3 class="fw-bold">Customer Reviews</h3>
+        <div class="rating">
+            <strong>Rating:</strong> 4/5
+        </div>
+
+        <ul>
+            <li>Review 1: "Great product! Highly recommend."</li>
+            <li>Review 2: "Good quality, but could be cheaper."</li>
+            <li>Review 3: "Satisfied with the purchase."</li>
+        </ul>
+
+        <h4 class="fw-bold">Add Your Review</h4>
+        <textarea name="reviewText" rows="4" class="form-control"></textarea>
+        <button class="btn btn-secondary">Submit Review</button>
+    </div>
+</div>
+
+<style>
+    .product-detail {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        margin-bottom: 20px;
+    }
+
+    .add-to-cart {
+        margin-bottom: 40px;
+    }
+
+    .product-reviews {
+        margin-top: 40px;
+    }
+
+        .product-reviews .rating {
+            margin-bottom: 10px;
+        }
+
+        .product-reviews ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .product-reviews ul li {
+                margin-bottom: 10px;
+            }
+
+        .product-reviews textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+</style>

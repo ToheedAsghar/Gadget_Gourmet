@@ -1,0 +1,50 @@
+﻿@model List<Gadget_Gourmet.Models.Entities.Product>
+
+<span class="display-1 mt-2 ps-md-2 fw-bold text-uppercase" style="font-family: Noah; font-size:170%;">
+	All Products
+</span>
+
+<table class="table table-bordered table-hover mt-4">
+    <thead class="thead-dark text-uppercase text-center" style="background-color: gainsboro">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Weight</th>
+            <th>Color</th>
+            <th>Manufacturer</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Weight</td>
+                <td>@product.Color</td>
+                <td>@product.Manufacturer</td>
+                <td>@product.Category</td>
+                <td>@product.Price</td>
+                <td>@product.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning mt-4">
+        No products found.
+    </div>
+}
+
+<div class="container-fluid mt-5" style="font-family: Noah">
+    <div class="row">
+        <a class="nav-link text-dark" asp-controller="Admin" asp-action="Index">Return to Admin Panel</a>
+    </div>
+</div>

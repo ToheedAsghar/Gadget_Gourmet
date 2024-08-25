@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Gadget_Gourmet.props" />
+</Project>

@@ -1,0 +1,105 @@
+﻿@model Gadget_Gourmet.Models.Entities.Product
+
+<span class="display-1 mt-2 ps-md-2 fw-bold text-uppercase" style="font-family: Noah; font-size:170%;">
+	Add Product
+</span>
+
+<form class="mt-3" method="post" asp-action="AddProduct">
+	<div asp-validation-summary="ModelOnly"></div>
+
+	@* Product Name *@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Name" class="form-label">Product Name</label>
+				<input type="text" class="form-control" id="Name" asp-for="Name">
+				<span asp-validation-for="Name" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Description*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Description" class="form-label">Product Description</label>
+				<textarea class="form-control" asp-for="Description"></textarea>
+				<span asp-validation-for="Description" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Weight*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Weight" class="form-label">Product Weight (in Grams)</label>
+				<input type="text" class="form-control" id="Weight" asp-for="Weight">
+				<span asp-validation-for="Weight" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Price*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Price" class="form-label">Price</label>
+				<input type="text" class="form-control" id="Price" asp-for="Price">
+				<span asp-validation-for="Price" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Color*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Color" class="form-label">Color</label>
+				<input type="text" class="form-control" id="Color" asp-for="Color">
+				<span asp-validation-for="Color" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Manufacturer*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Manufacturer" class="form-label">Product Manufacturer</label>
+				<input type="text" class="form-control" id="Manufacturer" asp-for="Manufacturer">
+				<span asp-validation-for="Manufacturer" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Category*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Category" class="form-label">Product Category</label>
+				<input type="text" class="form-control" id="Category" asp-for="Category">
+				<span asp-validation-for="Category" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	@*Product Quantity*@
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-md-5 col-12">
+				<label for="Quantity" class="form-label">Product Quantity</label>
+				<input type="text" class="form-control" id="Quantity" asp-for="Quantity">
+				<span asp-validation-for="Quantity" class="text-danger"></span>
+			</div>
+		</div>
+	</div>
+
+	<button type="submit" class="custom-button text-center">Submit</button>
+</form>
+
+<div class="container-fluid mt-5" style="font-family: Noah">
+	<div class="row">
+		<a class="nav-link text-dark" asp-controller="Admin" asp-action="Index">Return to Admin Panel</a>
+	</div>
+</div>
