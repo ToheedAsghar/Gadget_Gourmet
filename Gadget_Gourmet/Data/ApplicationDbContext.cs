@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Gadget_Gourmet.Models.Entities;
 
 namespace Gadget_Gourmet.Data
 {
@@ -9,5 +10,7 @@ namespace Gadget_Gourmet.Data
             : base(options)
         {
         }
+
+        public DbSet<Product> Products { get; set; }
     }
 }

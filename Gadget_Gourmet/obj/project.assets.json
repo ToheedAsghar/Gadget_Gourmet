@@ -4596,19 +4596,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Toheed\\.nuget\\packages\\": {}
+    "C:\\Users\\Toheed-Asghar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Toheed\\Downloads\\Compressed\\Gadget_Gourmet-20240825T175158Z-001\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
+      "projectUniqueName": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
       "projectName": "Gadget_Gourmet",
-      "projectPath": "C:\\Users\\Toheed\\Downloads\\Compressed\\Gadget_Gourmet-20240825T175158Z-001\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
-      "packagesPath": "C:\\Users\\Toheed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Toheed\\Downloads\\Compressed\\Gadget_Gourmet-20240825T175158Z-001\\Gadget_Gourmet\\Gadget_Gourmet\\obj\\",
+      "projectPath": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\Gadget_Gourmet.csproj",
+      "packagesPath": "C:\\Users\\Toheed-Asghar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Toheed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Toheed-Asghar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
