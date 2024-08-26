@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[user] (
+CREATE TABLE [dbo].[User] (
     [Id]          INT           IDENTITY (1, 1) NOT NULL,
     [name]        VARCHAR (32)  DEFAULT ('None') NULL,
     [username]    VARCHAR (32)  DEFAULT ('None') NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE [dbo].[user] (
 
 
 
-CREATE TABLE [dbo].[review] (
+CREATE TABLE [dbo].[Review] (
     [Id]          INT           IDENTITY (1, 1) NOT NULL,
     [userid]      INT           NOT NULL,
     [productid]   INT           NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE [dbo].[review] (
 );
 
 
-CREATE TABLE [dbo].[product] (
+CREATE TABLE [dbo].[Product] (
     [Id]           INT           IDENTITY (1, 1) NOT NULL,
     [name]         VARCHAR (100) NOT NULL,
     [description]  VARCHAR (300) NOT NULL,
@@ -40,13 +40,13 @@ CREATE TABLE [dbo].[product] (
 
 
 
-CREATE TABLE [dbo].[category] (
+CREATE TABLE [dbo].[Category] (
     [Id]   INT          IDENTITY (1, 1) NOT NULL,
     [name] VARCHAR (50) NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
-CREATE TABLE [dbo].[cart] (
+CREATE TABLE [dbo].[Cart] (
     [Id]        INT IDENTITY (1, 1) NOT NULL,
     [userid]    INT NOT NULL,
     [productid] INT NOT NULL,

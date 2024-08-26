@@ -11,6 +11,6 @@ namespace Gadget_Gourmet.Data
         {
         }
 
-        public DbSet<Product> Products { get; set; }
+        //public DbSet<Product> Products { get; set; }
     }
 }

@@ -13,15 +13,11 @@ namespace Gadget_Gourmet.Controllers
     public class HomeController : Controller
     {
         public string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=GadgetGourmetDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
-        //private readonly IHistory _Ihistory;
-        //public HomeController(IHistory history)
-        //{
-        //	_Ihistory = history;
-        //}
 
         private readonly IHistory _history;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IWebHostEnvironment _webHostEnvironment;
+
         public HomeController(IHistory history, UserManager<IdentityUser> userManager, IWebHostEnvironment webHostEnvironment)
         {
             _history = history;
@@ -38,7 +34,6 @@ namespace Gadget_Gourmet.Controllers
             }
             return View();
         }
-
         public IActionResult Privacy()
         {
             //_Ihistory.TrackPageVisit("Privacy", Url.Action("Privacy", "Home"), System.DateTime.Now.ToString());
@@ -49,7 +44,6 @@ namespace Gadget_Gourmet.Controllers
             //_Ihistory.TrackPageVisit("ContactUs", Url.Action("ContactUs", "Home"), System.DateTime.Now.ToString());
             return View();
         }
-
         [HttpPost]
         public IActionResult ContactUs(string? email, string? message)
         {
@@ -57,7 +51,6 @@ namespace Gadget_Gourmet.Controllers
             // direct to our email client
             return RedirectToAction("ContactUs", "Home");
         }
-
         public IActionResult History()
         {
             // Retrieve the list of visited pages from the session
@@ -65,12 +58,10 @@ namespace Gadget_Gourmet.Controllers
 
             return View(pagesVisited);
         }
-
         public IActionResult Return()
         {
             return View();
         }
-
 		[HttpPost]
         public IActionResult Return(Return model)
         {
@@ -111,12 +102,9 @@ namespace Gadget_Gourmet.Controllers
             // If the model is not valid, return the view with the model to show validation errors
             return View(model);
         }
-
         public IActionResult Confirmation()
 		{
 			return View(); 
 		}
-
-
 	}
 }
