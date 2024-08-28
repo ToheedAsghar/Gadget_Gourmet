@@ -81,10 +81,5 @@ namespace Gadget_Gourmet.Controllers
 
             return View("_ProductListPartial", products);
         }
-
-        public IActionResult ProductSearchBar()
-        {
-            return View();
-        }
     }
 }

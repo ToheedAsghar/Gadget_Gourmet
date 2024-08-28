@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YIGZtTVn8HcU4AxeyaRGvSRAhdy1cHSo7RboJoVGU4Y=",
+  "Hash": "AkrQ9itBepYI6CYkmZFb/ST+/wlprmbwOWRHGyU4Ivk=",
   "Source": "Gadget_Gourmet",
   "BasePath": "_content/Gadget_Gourmet",
   "Mode": "Default",
@@ -1556,12 +1556,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\image2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\Images\\Receipts\\16199b1d-f6c7-45b2-9407-0e800691a269_random.png",
+      "Identity": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\Images\\Receipts\\d16351ea-3b30-469d-8ea3-b6216ca83dc8_random.png",
       "SourceId": "Gadget_Gourmet",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\",
       "BasePath": "_content/Gadget_Gourmet",
-      "RelativePath": "Images/Receipts/16199b1d-f6c7-45b2-9407-0e800691a269_random.png",
+      "RelativePath": "Images/Receipts/d16351ea-3b30-469d-8ea3-b6216ca83dc8_random.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1572,26 +1572,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Receipts\\16199b1d-f6c7-45b2-9407-0e800691a269_random.png"
-    },
-    {
-      "Identity": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\Images\\Receipts\\9bcc0746-de02-48c0-a50c-40c76b7b4a68_random.png",
-      "SourceId": "Gadget_Gourmet",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\",
-      "BasePath": "_content/Gadget_Gourmet",
-      "RelativePath": "Images/Receipts/9bcc0746-de02-48c0-a50c-40c76b7b4a68_random.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Receipts\\9bcc0746-de02-48c0-a50c-40c76b7b4a68_random.png"
+      "OriginalItemSpec": "wwwroot\\Images\\Receipts\\d16351ea-3b30-469d-8ea3-b6216ca83dc8_random.png"
     },
     {
       "Identity": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\Images\\store\\baby.png",

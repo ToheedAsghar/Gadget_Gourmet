@@ -67,7 +67,6 @@ namespace Gadget_Gourmet.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 string invoicePathUrl = null;
 
                 if (model.Invoice != null && model.Invoice.Length > 0)
