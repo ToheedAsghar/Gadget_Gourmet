@@ -6,7 +6,6 @@
 
         {
             @foreach (var product in Model)
-
             {
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="card h-100 shadow-sm">
@@ -17,7 +16,6 @@
                             <h6 class="card-subtitle mb-2 text-muted">Price: $@product.Price</h6>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            @* <a href="AdminController/ViewProduct?id=@product.Id" class="btn btn-primary btn-block">View Product</a> *@
                             <a href="@Url.Action("ViewProduct", "Product", new { id = product.Id })" class="btn btn-primary btn-block">View Product</a>
 
                         </div>

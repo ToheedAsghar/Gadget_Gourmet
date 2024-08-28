@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WePcxfvSawIZWYvQuuOzF6Ix6TgbGt13kgJ9Bu3PPyg=",
+  "Hash": "YIGZtTVn8HcU4AxeyaRGvSRAhdy1cHSo7RboJoVGU4Y=",
   "Source": "Gadget_Gourmet",
   "BasePath": "_content/Gadget_Gourmet",
   "Mode": "Default",
@@ -1630,6 +1630,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\temp.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\js\\searchbar.js",
+      "SourceId": "Gadget_Gourmet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\",
+      "BasePath": "_content/Gadget_Gourmet",
+      "RelativePath": "js/searchbar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\searchbar.js"
     },
     {
       "Identity": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\js\\site.js",

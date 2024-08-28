@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\js\\searchbar.js",
+      "PackagePath": "staticwebassets\\js\\searchbar.js"
+    },
+    {
       "Id": "C:\\Users\\Toheed-Asghar\\source\\repos\\Gadget_Gourmet\\Gadget_Gourmet\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

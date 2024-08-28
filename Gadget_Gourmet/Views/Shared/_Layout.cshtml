@@ -46,6 +46,7 @@
                 <ul class="navbar-nav me-5 order-md-3 order-3">
                     <li class="nav-item">
 
+                        <!--Searh bar-->
                         <div class="d-flex justify-content-center mx-auto mt-3">
                             <form id="search-from" method="get" action="@Url.Action("Search", "Product")">
                                 <div class="input-group" style="height: 35px;">
@@ -55,6 +56,8 @@
                                     </button>
                                 </div>
                                 <ul id="searchResults" class="list-group mt-2"></ul>
+                                <div id="search-results" class="container"></div>
+                                <script src="js/searchbar.js"></script>
                             </form>
                         </div>
 
@@ -174,6 +177,7 @@
             </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

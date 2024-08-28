@@ -12,13 +12,13 @@ namespace Gadget_Gourmet.Controllers
         protected readonly IGeneric<Product> _productRepo;
         private readonly ApplicationDbContext _context;
 
-        public ProductController(IGeneric<Product> productRepo,ApplicationDbContext context)
+        public ProductController(IGeneric<Product> productRepo, ApplicationDbContext context)
         {
             _productRepo = productRepo;
             _context = context;
         }
 
-        public IActionResult Index(int id)
+        public IActionResult Index()
         {
             return View();
         }
@@ -32,24 +32,10 @@ namespace Gadget_Gourmet.Controllers
                 return View("ViewProductDetails", prod);
             }
             else
-            {   
+            {
                 return NotFound();
             }
         }
-
-        //[HttpPost]
-        //public IActionResult ViewProduct(int id)
-        //{
-        //    Product prod = _productRepo.GetById(id);
-        //    if (prod != null)
-        //    {
-        //        return RedirectToAction("ViewProductDetails", "Product");
-        //    }
-        //    else
-        //    {
-        //        return View();
-        //    }
-        //}
 
         public IActionResult ViewProductDetails(Product product)
         {
@@ -61,7 +47,8 @@ namespace Gadget_Gourmet.Controllers
         {
             List<Product> products = new List<Product>();
             string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=GadgetGourmetDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
-            
+
+            Product prod = new();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -73,7 +60,7 @@ namespace Gadget_Gourmet.Controllers
                     {
                         while (reader.Read())
                         {
-                            Product prod = new Product
+                            prod = new Product
                             {
                                 Id = Convert.ToInt32(reader["Id"]),
                                 Name = reader["Name"].ToString(),
@@ -92,9 +79,12 @@ namespace Gadget_Gourmet.Controllers
                 }
             }
 
-            // Pass the products list to the view
-            return View(products);
+            return View("_ProductListPartial", products);
         }
 
+        public IActionResult ProductSearchBar()
+        {
+            return View();
+        }
     }
 }
